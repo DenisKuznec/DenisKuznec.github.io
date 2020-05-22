@@ -1,0 +1,77 @@
+
+<!-- saved from url=(0027)https://partner.tochka.com/ -->
+<html lang="ru" style="transform: translateZ(0px) scale(1, 1);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>window.widget = {};window.widget.ready = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'ready', arguments);
+    };
+window.widget.track = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'track', arguments);
+    };
+window.widget.show = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'show', arguments);
+    };
+window.widget.hide = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'hide', arguments);
+    };
+window.widget.configure = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'configure', arguments);
+    };
+window.widget.setScreen = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'setScreen', arguments);
+    };
+window.widget.pushStatus = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'pushStatus', arguments);
+    };
+window.widget.pushSubscribe = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'pushSubscribe', arguments);
+    };
+window.widget.getData = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'getData', arguments);
+    };
+window.widget.getMotivation = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'getMotivation', arguments);
+    };
+window.widget.setValue = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'setValue', arguments);
+    };
+window.widget.getValue = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'getValue', arguments);
+    };
+window.widget.getMeta = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'getMeta', arguments);
+    };
+window.widget.collectEmail = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'collectEmail', arguments);
+    };
+window.widget.sendError = function() {
+      return window.parent.flocktory.wapi(window.frameElement, 'sendError', arguments);
+    };Object.freeze(window.widget);</script>
+
+  <title>WC-8719, WC-9074</title>
+  
+  <script type="text/javascript">
+    widget.ready(function () {
+      parent.flocktory = parent.flocktory || [];
+      var loginBtn = parent.document.querySelector('.header__ibank > a:nth-child(2)');
+
+      if (!localStorage.getItem('fl-8719-logged-in')) {
+        loginBtn && loginBtn.addEventListener('click', function () {
+          widget.track('click-button');
+          localStorage.setItem('fl-8719-logged-in', true);
+          parent.flocktory.push(['attachToProfile', {
+            data: {
+              "key": "account",
+              "value: 1": true,
+              "value: 0": false
+            }
+          }]);
+        });
+      }
+    });
+  </script>
+</head>
+
+<body>
+
+
+
+</body></html>
